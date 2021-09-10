@@ -26,8 +26,29 @@
              <br>
         </div>
     </div>
-       
+    
 
+    @endforeach
+
+    @foreach ($tripFiltrati as $tripFiltrato)
+    <div class="container">
+        <h1>Dati filtrati</h1>
+      <h1>Our Offer for your  unforgettable trip:</h1>
+        <div class="box-trip">
+            <div class="img-box">
+                <img src="{{$tripFiltrato->cover}}" alt="">
+            </div>
+            <div class="informations">
+                <h2> {{$tripFiltrato ->city}}</h2>
+                <h3> {{$tripFiltrato ->hotel}}</h3>
+                <h3>Nights: {{$tripFiltrato ->days}}</h3>
+                <h3> €{{$tripFiltrato ->price}}</h3>
+              
+            </div>
+            
+             <br>
+        </div>
+    </div>
     @endforeach
 </body>
 </html>
