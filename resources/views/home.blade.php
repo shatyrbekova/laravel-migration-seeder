@@ -22,7 +22,7 @@
                 <h3> €{{$trip ->price}}</h3>
               
             </div>
-            
+          
              <br>
         </div>
     </div>
@@ -71,7 +71,7 @@
     .box-trip{
         display:flex;
         height:350px;
-        width:600px;
+        width:1200px;
     }
    .img-box{
        width:400px;
@@ -83,5 +83,6 @@
     }
     .informations{
         margin-left: 30px;
+        
     }
 </style>
