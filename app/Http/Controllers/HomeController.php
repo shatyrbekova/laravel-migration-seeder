@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Trip;
 class HomeController extends Controller
 {
      public function index(){
-        return view('welcome');
+
+        $allTrips= Trip::all();
+        return view('home', compact('allTrips'));
+       
     }
 }
